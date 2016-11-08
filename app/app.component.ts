@@ -13,10 +13,17 @@ export class Notificacion {
   selector: 'my-app',
   providers: [NotificationService],
   template: `
+  <header>
+    <div class="container">
+
   <h1>Comunicaciones EAFIT</h1>
+
+    </div>
+
+  </header>
   Curso: <input [(ngModel)]="notificacion.nombreCurso" placeholder="Curso Inglés Adultos"><br><br>
   Información de curso: <input [(ngModel)]="notificacion.infoCurso" placeholder="Nivel 8 - Fecha inicio: 28/09/2016 - Hora: 10-12 L,W,V - Salón: 1-701" style = "width: 410px;"><br><br>
-  <button (click)="enviarNotificacion(notificacion)">Enviar notificacion</button>
+  <button class="btn btn-primary" (click)="enviarNotificacion(notificacion)">Enviar notificacion</button>
   `
 })
 

@@ -31,7 +31,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             providers: [notificationService_1.NotificationService],
-            template: "\n  <h1>Comunicaciones EAFIT</h1>\n  Curso: <input [(ngModel)]=\"notificacion.nombreCurso\" placeholder=\"Curso Ingl\u00E9s Adultos\"><br><br>\n  Informaci\u00F3n de curso: <input [(ngModel)]=\"notificacion.infoCurso\" placeholder=\"Nivel 8 - Fecha inicio: 28/09/2016 - Hora: 10-12 L,W,V - Sal\u00F3n: 1-701\" style = \"width: 410px;\"><br><br>\n  <button (click)=\"enviarNotificacion(notificacion)\">Enviar notificacion</button>\n  "
+            template: "\n  <header>\n    <div class=\"container\">\n\n  <h1>Comunicaciones EAFIT</h1>\n\n    </div>\n\n  </header>\n  Curso: <input [(ngModel)]=\"notificacion.nombreCurso\" placeholder=\"Curso Ingl\u00E9s Adultos\"><br><br>\n  Informaci\u00F3n de curso: <input [(ngModel)]=\"notificacion.infoCurso\" placeholder=\"Nivel 8 - Fecha inicio: 28/09/2016 - Hora: 10-12 L,W,V - Sal\u00F3n: 1-701\" style = \"width: 410px;\"><br><br>\n  <button class=\"btn btn-primary\" (click)=\"enviarNotificacion(notificacion)\">Enviar notificacion</button>\n  "
         }), 
         __metadata('design:paramtypes', [notificationService_1.NotificationService])
     ], AppComponent);
