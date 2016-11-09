@@ -15,15 +15,74 @@ export class Notificacion {
   template: `
   <header>
     <div class="container">
-
-  <h1>Comunicaciones EAFIT</h1>
-
+      <h1>Comunicaciones EAFIT</h1>
     </div>
 
-  </header>
-  Curso: <input [(ngModel)]="notificacion.nombreCurso" placeholder="Curso Inglés Adultos"><br><br>
-  Información de curso: <input [(ngModel)]="notificacion.infoCurso" placeholder="Nivel 8 - Fecha inicio: 28/09/2016 - Hora: 10-12 L,W,V - Salón: 1-701" style = "width: 410px;"><br><br>
-  <button class="btn btn-primary" (click)="enviarNotificacion(notificacion)">Enviar notificacion</button>
+    <div class="container">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Opciones</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personas <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Registrar</a></li>
+                  <li><a href="#">Modificar</a></li>
+                  <li><a href="#">Eliminar</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cursos <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Añadir</a></li>
+                  <li><a href="#">Modificar</a></li>
+                  <li><a href="#">Eliminar</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificacion <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="notification.html">Enviar</a></li>
+                  <li><a href="#">Historial</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="login/login.html">Salir</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    </div> <!-- /container -->
+    </header>
+    <div class="container">
+        <section class="main row">
+
+          <div class="col-md-12">
+            Curso: <input [(ngModel)]="notificacion.nombreCurso" placeholder="Curso Inglés Adultos"><br><br>
+          </div>
+
+          <div class="col-md-12">
+            Información de curso: <input [(ngModel)]="notificacion.infoCurso" placeholder="Nivel 8 - Fecha inicio: 28/09/2016 - Hora: 10-12 L,W,V - Salón: 1-701" style = "width: 410px;"><br><br>
+          </div>
+
+          <div class="col-md-12">
+            <button class="btn btn-primary" (click)="enviarNotificacion(notificacion)">Enviar notificacion</button>
+          </div>
+        </section>
+    </div>
+
   `
 })
 

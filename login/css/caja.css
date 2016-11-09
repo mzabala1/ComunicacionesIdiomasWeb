@@ -1,0 +1,27 @@
+#Caja
+{
+  background: #f0f0f0;
+  width: 200px;
+  border: 1px solid white;
+  margin: 200px auto;
+  padding: 1em;
+  border-radius: 6px;
+}
+body
+{
+  background:#FFF;
+}
+h1
+{
+  font-family: arial;
+  color: #0080ff
+}
+input[type=n_user], input[type=submit], input[type=password]
+{
+  border-radius: 3px;
+  padding:2px ;
+}
+{
+  background: #0040FF;
+  cursor: pointer;
+}

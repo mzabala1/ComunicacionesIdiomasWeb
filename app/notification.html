@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+        <section class="main row">
+
+          <div class="col-md-12">
+            Curso: <input [(ngModel)]="notificacion.nombreCurso" placeholder="Curso Inglés Adultos"><br><br>
+          </div>
+
+          <div class="col-md-12">
+            Información de curso: <input [(ngModel)]="notificacion.infoCurso" placeholder="Nivel 8 - Fecha inicio: 28/09/2016 - Hora: 10-12 L,W,V - Salón: 1-701" style = "width: 410px;"><br><br>
+          </div>
+
+          <div class="col-md-12">
+            <button class="btn btn-primary" (click)="enviarNotificacion(notificacion)">Enviar notificacion</button>
+          </div>
+    </div>
+  </body>
+</html>

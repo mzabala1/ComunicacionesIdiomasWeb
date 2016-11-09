@@ -16,15 +16,14 @@ var NotificationService = (function () {
         this.http = http;
     }
     NotificationService.prototype.enviarNotificacion = function (notificacion) {
-        /*
-          var objetoNotificacion = `{
-              "to" : "cT0eoao5R4w:APA91bGTlSeEXId056I2Yeu_RvKsUwMHzQe1B9CNHbxi-Xkahh5dgTDLJsTIVgwBDzwXBV58BdzZQlZa5lBtfUxsM81qsm-lnNcOFf5VrTkBQhSC94IS1fTPvfZhOtEIq0IVNXu2J0B5",
-              "notification" : {
-              "body" : "great match!",
-              "title" : "",
-              "icon" : "myicon"
-              }
-            }`;*/
+        /*var objetoNotificacion = `{
+            "to" : "cT0eoao5R4w:APA91bGTlSeEXId056I2Yeu_RvKsUwMHzQe1B9CNHbxi-Xkahh5dgTDLJsTIVgwBDzwXBV58BdzZQlZa5lBtfUxsM81qsm-lnNcOFf5VrTkBQhSC94IS1fTPvfZhOtEIq0IVNXu2J0B5",
+            "notification" : {
+            "body" : "great match!",
+            "title" : "",
+            "icon" : "myicon"
+            }
+          }`;*/
         var objetoNotificacion = {};
         objetoNotificacion.to = "cT0eoao5R4w:APA91bGTlSeEXId056I2Yeu_RvKsUwMHzQe1B9CNHbxi-Xkahh5dgTDLJsTIVgwBDzwXBV58BdzZQlZa5lBtfUxsM81qsm-lnNcOFf5VrTkBQhSC94IS1fTPvfZhOtEIq0IVNXu2J0B5";
         objetoNotificacion.notification = {};

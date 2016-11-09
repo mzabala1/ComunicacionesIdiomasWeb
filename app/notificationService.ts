@@ -7,8 +7,8 @@ export class NotificationService {
   constructor(private http: Http) { }
 
 enviarNotificacion(notificacion) {
-/*
-  var objetoNotificacion = `{
+
+  /*var objetoNotificacion = `{
       "to" : "cT0eoao5R4w:APA91bGTlSeEXId056I2Yeu_RvKsUwMHzQe1B9CNHbxi-Xkahh5dgTDLJsTIVgwBDzwXBV58BdzZQlZa5lBtfUxsM81qsm-lnNcOFf5VrTkBQhSC94IS1fTPvfZhOtEIq0IVNXu2J0B5",
       "notification" : {
       "body" : "great match!",
@@ -29,7 +29,7 @@ enviarNotificacion(notificacion) {
   	var headers = new Headers();
   	headers.append('Authorization', 'key=AIzaSyA3HawNKvXJsr8l4MGZTbXUeLrltAqdiT0');
   	headers.append('Content-Type', 'application/json');
-  
+
   this.http
     .post('https://fcm.googleapis.com/fcm/send', json, { headers: headers })
     .map(response => response.json())
