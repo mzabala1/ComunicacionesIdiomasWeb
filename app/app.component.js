@@ -23,9 +23,6 @@ var AppComponent = (function () {
             nombreCurso: '',
             infoCurso: ''
         };
-        this.enviarNotificacion = function (notificacion) {
-            notificationService.enviarNotificacion(notificacion);
-        };
     }
     AppComponent = __decorate([
         core_1.Component({

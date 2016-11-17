@@ -113,7 +113,7 @@ export class AppComponent {
   constructor(notificationService: NotificationService) {
   }
 
-  enviarNotificacion : function(notificacion) {
+  /*enviarNotificacion : function(notificacion) {
      notificationService.enviarNotificacion(notificacion);
-  }
+  }*/
 }
