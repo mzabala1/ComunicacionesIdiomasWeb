@@ -5,8 +5,12 @@ import { Injectable } from '@angular/core';
 
 export class Notificacion {
   id: number;
-  nombreCurso: string;
-  infoCurso: string;
+  curso: string;
+  nivel: string;
+  fecha: string;
+  hora: string;
+  dias: string;
+  salon: string;
 }
 
 @Component({
@@ -15,7 +19,7 @@ export class Notificacion {
   template: `
   <header>
     <div class="container">
-      <h1>Comunicaciones EAFIT</h1>
+      <h1>Comunicaciones Idiomas</h1>
     </div>
 
     <div class="container">
@@ -53,7 +57,7 @@ export class Notificacion {
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notificacion <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/#">Enviar</a></li>
+                  <li><a href="#">Enviar</a></li>
                   <li><a href="#">Historial</a></li>
                 </ul>
               </li>
@@ -70,27 +74,27 @@ export class Notificacion {
         <section class="main row">
 
           <div class="col-md-12">
-            Curso: <input [(ngModel)]="notificacion.nombreCurso" placeholder="Curso Inglés Adultos" style = "width: 410px;"><br><br>
+            Curso: <input [(ngModel)]="notificacion.curso" placeholder="Curso Inglés Adultos" style = "width: 410px;"><br><br>
           </div>
 
           <div class="col-md-12">
-            Nivel: <input [(ngModel)]="notificacion.infoCurso" placeholder="Nivel 8" style = "width: 410px;"><br><br>
+            Nivel: <input [(ngModel)]="notificacion.nivel" placeholder="Nivel 8" style = "width: 410px;"><br><br>
           </div>
 
           <div class="col-md-12">
-            Fecha: <input [(ngModel)]="notificacion.infoCurso" placeholder="Fecha inicio: 28/09/2016" style = "width: 410px;"><br><br>
+            Fecha: <input [(ngModel)]="notificacion.fecha" placeholder="Fecha inicio: 28/09/2016" style = "width: 410px;"><br><br>
           </div>
 
           <div class="col-md-12">
-            Hora: <input [(ngModel)]="notificacion.infoCurso" placeholder="Hora: 10-12" style = "width: 410px;"><br><br>
+            Hora: <input [(ngModel)]="notificacion.hora" placeholder="Hora: 10-12" style = "width: 410px;"><br><br>
           </div>
 
           <div class="col-md-12">
-            Días: <input [(ngModel)]="notificacion.infoCurso" placeholder="L,W,V" style = "width: 410px;"><br><br>
+            Días: <input [(ngModel)]="notificacion.dias" placeholder="L,W,V" style = "width: 410px;"><br><br>
           </div>
 
           <div class="col-md-12">
-            Salón: <input [(ngModel)]="notificacion.infoCurso" placeholder="Salón: 1-701" style = "width: 410px;"><br><br>
+            Salón: <input [(ngModel)]="notificacion.salon" placeholder="Salón: 1-701" style = "width: 410px;"><br><br>
           </div>
 
           <div class="col-md-12">
@@ -99,6 +103,8 @@ export class Notificacion {
         </section>
     </div>
 
+    <div align="center"> <img src="../logo_idiomas_eafit.png"> </div>
+
   `
 })
 
@@ -106,14 +112,18 @@ export class AppComponent {
 
   notificacion: Notificacion = {
     id: 1,
-    nombreCurso: '',
-    infoCurso: ''
+    curso: '',
+    nivel: '',
+    fecha: '',
+    hora: '',
+    dias: '',
+    salon: ''
   };
 
   constructor(notificationService: NotificationService) {
   }
 
-  /*enviarNotificacion : function(notificacion) {
+  enviarNotificacion : function(notificacion) {
      notificationService.enviarNotificacion(notificacion);
-  }*/
+  }
 }
